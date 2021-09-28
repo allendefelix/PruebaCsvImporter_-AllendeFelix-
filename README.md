@@ -21,8 +21,7 @@ La segunda alternativa es descargar el fichero y leerlo en forma local ( la lect
 *** 
 ```
 1) Abrir Microsoft SQL Server Management Studio
-2) Correr los scripts 01-Create DataBase CsvImporter y 02 - Create Table Stocks
-que se encuentran en la raiz del repositorio.
+2) Correr los scripts 01-Create DataBase CsvImporter y 02 - Create Table Stocks que se encuentran en la raiz del repositorio.
 3) $ git clone https://github.com/allendefelix/PruebaCsvImporter_-AllendeFelix-.git
 4) Si no desea clonarlo puede descargar el proyecto como zip, luego abrir visual studio 2019 y abrir la solucion. 
 ```
