@@ -1,2 +1,2 @@
-CREATE DATABASE prueba
+CREATE DATABASE CsvImporter
 
