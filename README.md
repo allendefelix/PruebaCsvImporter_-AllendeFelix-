@@ -12,8 +12,9 @@ Es un proyecto de consola que permite leer un fichero .csv almacenado en una cue
 
 ### Informacion General
 ***
-Para la lectura del archivo en Azure opte por 2 alternativas, por defecto esta la alternativa de leer el fichero desde la URL pero los tiempos de lectura no son los optimos por distintas variables ( conectividad, servidor, etc.).
-La segunda alternativa es descargar el fichero y leerlo en forma local ( la lectura es en segundos) a fines practicos no puedo subir el archivo .csv al repositorio por exceder la capacidad maxima permitida, en caso de querer probar el sistema de esta forma se debe hacer lo siguiente:
+Para la lectura del archivo en Azure opte por 2 alternativas, por defecto esta la alternativa de leer el fichero desde la URL pero los tiempos de lectura no son los optimos por distintas variables ( conectividad, servidor, etc.) dando un promedio de 15 minutos para la lectura en memoria de todo el fichero y consumiendo en promedio 3GB de Ram,
+por otro lado el bulkCopy inserta los 17 millones de registros en un promedio de 3 minutos 14 segundos.
+La segunda alternativa es descargar el fichero y leerlo en forma local ( la lectura es en 38 segundos promedio) a fines practicos no puedo subir el archivo .csv al repositorio por exceder la capacidad maxima permitida, en caso de querer probar el sistema de esta forma se debe hacer lo siguiente:
 1) Descargar el fichero y copiarlo dentro de la carpeta "CsvImporter".
 2) Modificar el archivo "appsettings" que se encuentra en la raiz del proyecto "CsvImporter" y comentar la Key "URL_CSV_FILE" que contiene el fichero en la web y descomentar la key que se encuentra debajo tambien llamada "URL_CSV_FILE" que solo hace referencia al nombre del archivo.
 
