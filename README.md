@@ -30,6 +30,8 @@ La segunda alternativa es descargar el fichero y leerlo en forma local ( la lect
 ```
 ### Test Unitario
 ***
+Para Correr los tests unitarios por consola situarse en la carpeta "CsvImporter.Tests" y correr el comando dotnet test
+
 Para la realizacion de las pruebas unitarias se utilizo el marco de pruebas xUnit.NET ya que es una herramienta gratuita y de código abierto y muy simple de implementar, se implementaron 3 pruebas unitarias :
 1) ReadAllRowsFromCSVFile() : el cual nos permite probar si el fichero ha sido leido, a fines practicos se lee un fichero de mucho menor tamaño.
 2) DeleteAllFilesTableStocks() : el cual nos permite probar si se han eliminado todos los registros de la bd, retornando null cuando la bd no contiene ningun dato.
