@@ -50,5 +50,4 @@ Tambien descarte el uso del objeto "StreamReader" en mi opinion le agrega mas lo
 5. **Que alternativas descarto para eliminar los registros en la base de datos. ?**
 Descarte la utilizacion de la  libreria Entity Framework Core ya que para los fines de este practico no considere necesario agregarle la complejidad propia de aplicar la misma en un proyecto de consola como la creacion de un dbContext siendo que este proyecto contaba con una sola tabla por lo tanto una sola entidas en el proyecto.
 6. **Que alternativas descarto para insertar los registros .csv a SQL Server. ?**
-Descarte la utilizacion de la  libreria Entity Framework Core por una cuestion de performance siendo que EFC es muy agil con su metodo SaveChanges() pero no tiene comparacion con el SQLBulkCopy para dar un ej. SaveChanges() inserta 5000 registros en 6000 ms siendo que BulkCopy lo hace en 75ms.# CsvImporter
-Es un proyecto de consola que permite leer un fichero .csv almacenado en una cuenta de almacenamiento de Azure e inserte su contenido en una BD SQL Server local. 
+Descarte la utilizacion de la  libreria Entity Framework Core por una cuestion de performance siendo que EFC es muy agil con su metodo SaveChanges() pero no tiene comparacion con el SQLBulkCopy para dar un ej. SaveChanges() inserta 5000 registros en 6000 ms siendo que BulkCopy lo hace en 75ms.
